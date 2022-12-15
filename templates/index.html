@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="mb-3">
+    <a href="#" class="burger-btn d-block d-xl-none">
+        <i class="bi bi-justify fs-3"></i>
+    </a>
+</header>
+
+<div class="page-heading">
+    <h3>KM DOROLONDA</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-xl-12 col-lg-9">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/1.jpg') }}" width="100%" height="auto"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/temp.png') }}" width="50%" height="auto"/>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h5 class="font-extrabold">37°C</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/windspeed-resize.png') }}" width="50%" height="auto"/>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h5 class="font-extrabold">1.2 kn</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/wave-resize.png') }}" width="50%" height="auto"/>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h5 class="font-extrabold">0.2 m</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Deskripsi Kapal</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                      </tr>
+                                  <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/speed-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <a href="#" class="stretched-link"><h5 class="font-extrabold">Kecepatan</h6></a>                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/distance-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <a href="#" class="stretched-link"><h5 class="font-extrabold">Jarak</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/ship-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <a href="#" class="stretched-link"><h5 class="font-extrabold">Waktu Berlayar</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/anchor-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <a href="#" class="stretched-link"><h5 class="font-extrabold">Waktu Jangkar</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-xs-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/analyze-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <a href="#" class="stretched-link"><h5 class="font-extrabold">Analisa</h6></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>Map Position</h4>
+                        </div>
+                        <div class="card-body">
+                            <script type="text/javascript">
+                                var width="100%";var height="400";
+                                var mmsi=525005046;
+                              </script><script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock content %}
+    

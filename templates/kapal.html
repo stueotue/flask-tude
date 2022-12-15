@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="mb-3">
+    <a href="#" class="burger-btn d-block d-xl-none">
+        <i class="bi bi-justify fs-3"></i>
+    </a>
+</header>
+
+<div class="page-heading">
+    <div class="row">
+        <div class="col-12 col-md-6 order-md-1 order-last">
+            <h3>{{ name }}</h3>
+        </div>
+        <div class="col-12 col-md-6 order-md-2 order-first">
+            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ name }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-xl-12 col-lg-9">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/1.jpg') }}" width="100%" height="auto"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/temp.png') }}" width="50%" height="auto"/>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h5 class="font-extrabold">37°C</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/windspeed-resize.png') }}" width="50%" height="auto"/>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h5 class="font-extrabold">1.2 kn</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/wave-resize.png') }}" width="50%" height="auto"/>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h6 class="text-muted font-semibold"></h6>
+                                            <h5 class="font-extrabold">0.2 m</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Deskripsi Kapal</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th> Nama Kapal </th>
+                                        <td> {{ name }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Tipe Kapal </th>
+                                        <td> {{ spec.tipe }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> MMSI </th>
+                                        <td> {{ mmsi }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> LOA </th>
+                                        <td> {{ spec.LOA }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Draft </th>
+                                        <td> {{ spec.Draft }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Breadth </th>
+                                        <td> {{ spec.Breadth }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Displacement </th>
+                                        <td> {{ spec.Displacement }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Vt Design </th>
+                                        <td> {{ spec.vt_design }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Gross Tonnage </th>
+                                        <td> {{ spec.gross_tonnage }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Netto Tonnage </th>
+                                        <td> {{ spec.netto_tonnage }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Death Weight Tonnage </th>
+                                        <td> {{ spec.death_weight }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Main Engine </th>
+                                        <td> {{ spec.main_engine }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Aux. Engine </th>
+                                        <td> {{ spec.aux_engine }} </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href="/vessel/{{ id }}/speed" class="stretched-link">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/speed-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h5 class="font-extrabold">Kecepatan</h6>
+                            </a>                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href="/vessel/{{ id }}/distance" class="stretched-link">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/distance-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h5 class="font-extrabold">Jarak</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href="/vessel/{{ id }}/time" class="stretched-link">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/ship-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h5 class="font-extrabold">Waktu Berlayar</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href="/vessel/{{ id }}/anchor" class="stretched-link">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/anchor-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h5 class="font-extrabold">Waktu Jangkar</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-xs-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <a href="/vessel/{{ id }}/analyze" class="stretched-link">
+                            <img style="border-radius: 10%;" src="{{ url_for ('static', filename='assets/images/icon/analyze-resize.png') }}" width="50%" height="auto"/>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h6 class="text-muted font-semibold"></h6>
+                            <h5 class="font-extrabold">Analisa</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>Map Position</h4>
+                        </div>
+                        <div class="card-body">
+                            <script type="text/javascript">
+                                var width="100%";var height="400";
+                                var mmsi="{{ mmsi }}";
+                              </script><script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock content %}
+    

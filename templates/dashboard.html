@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="mb-3">
+    <a href="#" class="burger-btn d-block d-xl-none">
+        <i class="bi bi-justify fs-3"></i>
+    </a>
+</header>
+
+<div class="page-heading">
+    <h3>Dashboard</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-xl-12 col-lg-9">
+            <div class="row">
+                <div class="col-6 col-lg-4 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">KM Dorolonda</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="/vessel/1" class="stretched-link">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/1-resize.jpg') }}" width="100%" height="auto"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">KM Labobar</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="/vessel/2" class="stretched-link">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/2-resize.jpg') }}" width="100%" height="auto"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">KM Sangiang</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="/vessel/3" class="stretched-link">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/3-resize-crop.jpg') }}" width="100%" height="auto"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">KM Sinabung</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="/vessel/4" class="stretched-link">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/4-resize.jpg') }}" width="100%" height="auto"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">KM Tatamailau</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="/vessel/5" class="stretched-link">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/5-resize.jpg') }}" width="100%" height="auto"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title text-center">KM Tilongkabila</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <a href="/vessel/6" class="stretched-link">
+                            <img style="border-radius: 5%;" src="{{ url_for ('static', filename='assets/images/vessels/6-resize.jpg') }}" width="100%" height="auto"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script defer src="{{ url_for ('static', filename='assets/js/dummy.js') }}"></script>
+{% endblock content %}
+    
