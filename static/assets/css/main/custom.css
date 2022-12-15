@@ -1,0 +1,12 @@
+a, a:hover {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+
+canvas {
+  width: 100%;
+  height: auto
+}
