@@ -55,6 +55,7 @@ function setConfig(num) {
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          aspectRatio: 1,
           plugins: {
               title: {
                   display: true,
