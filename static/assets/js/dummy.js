@@ -5,36 +5,44 @@ const title_text = {
                 "Kecepatan Harian (KNOT/JAM)",
                 "Kecepatan Mingguan (KNOT/JAM)",
                 "Kecepatan Bulanan (KNOT/JAM)",
-                "Kecepatan Tahunan (KNOT/JAM)"
+                "Kecepatan Tahunan (KNOT/JAM)",
+                "Data kecepatan"
             ],
 
     "distance": [
                     "Jarak Tempuh Harian (MILE)",
                     "Jarak Tempuh Mingguan (MILE)",
                     "Jarak Tempuh Bulanan (MILE)",
-                    "Jarak Tempuh Tahunan (MILE)"
+                    "Jarak Tempuh Tahunan (MILE)",
+                    "Data jarak"
                 ],
 
     "time": [
                 "Waktu Berlayar Harian (DALAM MENIT)",
                 "Waktu Berlayar Mingguan (DALAM MENIT)",
                 "Waktu Berlayar Bulanan (DALAM MENIT)",
-                "Waktu Berlayar Tahunan (DALAM MENIT)"
+                "Waktu Berlayar Tahunan (DALAM MENIT)",
+                "Data waktu berlayar"
             ],
 
     "anchor": [
                 "Waktu Jangkar Harian (DALAM MENIT)",
                 "Waktu Jangkar Mingguan (DALAM MENIT)",
                 "Waktu Jangkar Bulanan (DALAM MENIT)",
-                "Waktu Jangkar Tahunan (DALAM MENIT)"
+                "Waktu Jangkar Tahunan (DALAM MENIT)",
+                "Data waktu jangkar"
             ],
     "analyze": [
                 "Kecepatan Harian (KNOT/JAM)",
                 "Kecepatan Mingguan (KNOT/JAM)",
                 "Kecepatan Bulanan (KNOT/JAM)",
-                "Kecepatan Tahunan (KNOT/JAM)"
+                "Kecepatan Tahunan (KNOT/JAM)",
+                "Data analisa"
             ],
 }
+
+var desc = document.getElementById("desc")
+desc.innerText = title_text[graph_name][4]
 
 function setConfig(num) {
 
